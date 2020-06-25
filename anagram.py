@@ -1,6 +1,9 @@
 string1=str(input("enter string1:"))
 string2=str(input("enter string2:"))
-if(sorted(string1)==sorted(string2)):
-    print("True")
+if(string1.isalpha() and string2.isalpha()):
+    if(sorted(string1.lower())==sorted(string2.lower())):
+        print("True")
+    else:
+        print("False")
 else:
-    print("False")
+    print("give a valid string")
